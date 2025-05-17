@@ -12,3 +12,4 @@
 \\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.pdb
 \\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.genruntimeconfig.cache
 \\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\ref\KnihovnaProj.dll
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.sourcelink.json

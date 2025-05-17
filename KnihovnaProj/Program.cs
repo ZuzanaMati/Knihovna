@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using KnihovnaProj;
 
-namespace PlanovacUdalostiProj;
+namespace KnihovnaProj;
 
 class Program
 {
@@ -68,29 +68,18 @@ class Program
                 else if (entry.Trim().ToUpper() == "LIST")
                 {
                     //If there are not any books, warn the user
-                    if (books.Count == 0)
-                    {
-                        Console.WriteLine("You do not have any books added.");
-                        continue;
-                    }
+                    if (BookManager.CheckIfBookListIsEmpty(books)) continue;
 
                     System.Console.WriteLine("------- Book List -------");
                     //List the books based on publishedtime
-                    foreach (Book b in books.OrderBy(e => e.PublishedDate))
-                    {
-                        System.Console.WriteLine($"Book: {b.Title}, Author: {b.Author}, published {b.PublishedDate:dd.MM.yyyy}, pages: {b.Pages}");
-
-                    }
+                    BookManager.PrintAllBooks(books);
                 }
                 else if (entry.Trim().ToUpper() == "STATS")
                 {
 
                     //If there are not any books, warn the user
-                    if (books.Count == 0)
-                    {
-                        Console.WriteLine("You do not have any books added.");
-                        continue;
-                    }
+                    if (BookManager.CheckIfBookListIsEmpty(books)) continue;
+
 
                     int averageNumberOfPages = (int)Math.Round(books.Select(e => e.Pages).Average());
                     var countOfBooksPerAuthor = books.GroupBy(a => a.Author).Select(g => new { Author = g.Key, Count = g.Count() });
@@ -112,11 +101,8 @@ class Program
                 else if (entry.Trim().ToUpper().StartsWith("FIND"))
                 {
                     //If there are not any books, warn the user
-                    if (books.Count == 0)
-                    {
-                        Console.WriteLine("You do not have any books added.");
-                        continue;
-                    }
+                    if (BookManager.CheckIfBookListIsEmpty(books)) continue;
+
 
                     string[] wordSplitted = entry.Split(";");
 
