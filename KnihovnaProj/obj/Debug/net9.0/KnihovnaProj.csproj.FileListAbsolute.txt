@@ -1,0 +1,14 @@
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\bin\Debug\net9.0\KnihovnaProj.exe
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\bin\Debug\net9.0\KnihovnaProj.deps.json
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\bin\Debug\net9.0\KnihovnaProj.runtimeconfig.json
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\bin\Debug\net9.0\KnihovnaProj.dll
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\bin\Debug\net9.0\KnihovnaProj.pdb
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.GeneratedMSBuildEditorConfig.editorconfig
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.AssemblyInfoInputs.cache
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.AssemblyInfo.cs
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.csproj.CoreCompileInputs.cache
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.dll
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\refint\KnihovnaProj.dll
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.pdb
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\KnihovnaProj.genruntimeconfig.cache
+\\mac\Home\Desktop\C#2\CSharp2_kurz\Knihovna\KnihovnaProj\obj\Debug\net9.0\ref\KnihovnaProj.dll
