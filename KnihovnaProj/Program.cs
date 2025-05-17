@@ -71,7 +71,6 @@ class Program
                     if (BookManager.CheckIfBookListIsEmpty(books)) continue;
 
                     System.Console.WriteLine("------- Book List -------");
-                    //List the books based on publishedtime
                     BookManager.PrintAllBooks(books);
                 }
                 else if (entry.Trim().ToUpper() == "STATS")
@@ -79,23 +78,7 @@ class Program
 
                     //If there are not any books, warn the user
                     if (BookManager.CheckIfBookListIsEmpty(books)) continue;
-
-
-                    int averageNumberOfPages = (int)Math.Round(books.Select(e => e.Pages).Average());
-                    var countOfBooksPerAuthor = books.GroupBy(a => a.Author).Select(g => new { Author = g.Key, Count = g.Count() });
-                    string uniqueWords = string.Join(", ", books.SelectMany(b => b.Title.Split(" ")).Select(w => w.ToLower()).Distinct());
-
-                    System.Console.WriteLine("------- Statistics -------");
-                    System.Console.WriteLine($"Average number of pages is {averageNumberOfPages}");
-                    System.Console.WriteLine("Number of books per author:");
-
-                    foreach (var group in countOfBooksPerAuthor)
-                    {
-                        System.Console.WriteLine($"{group.Author}: {group.Count} book(s)");
-                    }
-
-
-                    System.Console.WriteLine($"Unique words are: {uniqueWords}");
+                    BookManager.PrintStats(books);
 
                 }
                 else if (entry.Trim().ToUpper().StartsWith("FIND"))
@@ -109,26 +92,12 @@ class Program
                     // check the entered format
                     if (wordSplitted.Length != 2)
                     {
-                        Console.WriteLine("Please enter: FIND;keyword");
+                        System.Console.WriteLine("Please enter: FIND;keyword");
                         continue;
                     }
 
                     string wordToLookfor = wordSplitted[1].Trim();
-                    var foundBooks = books.Where(b => b.Title.ToLower().Contains(wordToLookfor.ToLower()));
-
-                    if (!foundBooks.Any())
-                    {
-                        Console.WriteLine("No books found containing that keyword.");
-                        continue;
-                    }
-                    else
-                    {
-                        Console.WriteLine("------- Found books: -------");
-                        foreach (var book in foundBooks)
-                        {
-                            Console.WriteLine($"Title: {book.Title}, Author: {book.Author}");
-                        }
-                    }
+                    BookManager.FindBooks(books, wordToLookfor);
                 }
                 else
                 {
